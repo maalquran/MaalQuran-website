@@ -33,5 +33,8 @@ self::$config['api_v6']['appkey']   = [];
 self::$config['api_v6']['appkey'][] = null;
 
 
+self::$config['force_stop_log_header']   = true;
+
+
 
 ?>
