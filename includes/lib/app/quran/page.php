@@ -110,6 +110,7 @@ class page
 		{
 			$translatePage = \lib\app\quran\translate::load($load, $_meta);
 		}
+
 		// use in translatepage to load aya of this aya
 		$page1_aya_list     = [];
 
@@ -259,7 +260,7 @@ class page
 					$first_verse['juz']   = $value['juz'];
 					$first_verse['page']  = $value['page'];
 					$first_verse['sura']  = $value['sura'];
-					$first_verse['index']  = $value['index'];
+					$first_verse['index'] = isset($value['index']) ? $value['index'] : null;
 				}
 
 				$temp_translate = \lib\app\quran\translate::get_translation($value['sura'], $value['aya'], $_meta);

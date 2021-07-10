@@ -11,6 +11,8 @@ class aya
 			return \lib\app\quran\page::load(...func_get_args());
 		}
 
+		return [];
+
 		$id_raw = $_id;
 		// load sure
 		$_id = intval($_id);
@@ -101,7 +103,6 @@ class aya
 			$get_quran['3.3'] = [' = 3.3 AND', " `sura` = $from_sura  AND `aya` >= $from_aya AND `aya` <= $to_aya "];
 		}
 
-
 		$load           = \lib\db\quran_word::get($get_quran);
 
 
@@ -165,7 +166,7 @@ class aya
 					$first_verse['juz']   = $value['juz'];
 					$first_verse['page']  = $value['page'];
 					$first_verse['sura']  = $value['sura'];
-					$first_verse['index']  = $value['index'];
+					$first_verse['index'] = isset($value['index']) ? $value['index'] : null;
 				}
 
 				$quran[$myKey][$myArrayKey]['detail'] =
@@ -221,6 +222,7 @@ class aya
 
 				$value['audio'] = $my_sura. $value['audio'];
 			}
+
 
 			if(isset($value['text']))
 			{
@@ -414,6 +416,7 @@ class aya
 		$result['text_raw']          = $text_raw;
 		$result['mag_detail']        = $mag_detail;
 
+		// var_dump($result);exit;
 
 		// j($result);
 
