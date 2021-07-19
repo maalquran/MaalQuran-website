@@ -17,7 +17,7 @@ class view
 
 			if(isset($detail['index']))
 			{
-				\dash\redirect::to(\dash\url::kingdom(). '/a'. $detail['index']);
+				\dash\redirect::to(\dash\url::kingdom(). '/a'. $detail['index']. '?mode=onepage');
 			}
 		}
 		elseif($child === 'page')
@@ -26,7 +26,7 @@ class view
 
 			if(isset($detail['url']))
 			{
-				\dash\redirect::to($detail['url']);
+				\dash\redirect::to($detail['url']. '?mode=onepage');
 			}
 		}
 
