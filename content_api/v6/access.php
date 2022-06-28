@@ -6,8 +6,8 @@ class access
 {
 	public static function check()
 	{
-		\dash\app\apilog::save_detail(false);
-		\dash\app\apilog::stop();
+		// \dash\app\apilog::save_detail(false);
+		// \dash\app\apilog::stop();
 	}
 }
 ?>
