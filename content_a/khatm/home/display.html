@@ -14,20 +14,17 @@
 {%if dataTable%}
  {%if dataFilter%}
 
-  {{block('htmlSearchBox')}}
   {{block('htmlTable')}}
   {{block('htmlFilter')}}
 
  {%else%}
 
-  {{block('htmlSearchBox')}}
   {{block('htmlTable')}}
 
  {%endif%}
 {%else%}
  {%if dataFilter%}
 
-  {{block('htmlSearchBox')}}
   {{block('htmlFilterNoResult')}}
 
  {%else%}
