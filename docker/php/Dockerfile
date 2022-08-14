@@ -73,6 +73,9 @@ COPY src/ /var/www/html/
 # EXPOSE 9000
 # CMD ["php-fpm"]
 
+# bugfix sesssion save problem
+RUN mkdir /tmp/sessions
+RUN chmod 777 /tmp/sessions
 
 # This makes directory /var/www owned by www-data which is the default user for php-fpm.
 #RUN chown -R www-data:www-data /var/www/html

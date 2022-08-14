@@ -5,6 +5,8 @@ version: "3.8"
 volumes:
   # ********** nginx
   # salamquran_nginx_log:
+  # ********** nginx
+  # salamquran_php_sessions:
   # ********** mysql
   salamquran_mysql_lib:
   # ********** redis
@@ -51,6 +53,7 @@ services:
     tty: true
     volumes:
       - ./src/:/var/www/html/
+      # - salamquran_php_sessions:/usr/local/sessions
       # - .docker/php/conf/local.ini:/usr/local/etc/php/conf.d/local.ini
     environment:
       TZ: ${TIMEZONE}
