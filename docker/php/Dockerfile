@@ -12,13 +12,13 @@ RUN docker-php-ext-install -j$(nproc) gd
 RUN apt install -y libonig5 libonig-dev
 RUN docker-php-ext-install mbstring
 # intl
-# RUN apt install -y libicu-dev
+RUN apt install -y libicu-dev
 RUN docker-php-ext-install intl
 # bz2
-# RUN apt install -y libbz2-dev pv
+RUN apt install -y libbz2-dev pv
 RUN docker-php-ext-install bz2
 # soap
-# RUN apt install -y libxml2-dev
+RUN apt install -y libxml2-dev
 RUN docker-php-ext-install soap
 # redis
 # RUN pecl install -o -f redis
