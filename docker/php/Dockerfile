@@ -21,9 +21,9 @@ RUN docker-php-ext-install bz2
 RUN apt install -y libxml2-dev
 RUN docker-php-ext-install soap
 # redis
-# RUN pecl install -o -f redis
-# RUN rm -rf /tmp/pear
-# RUN docker-php-ext-enable redis
+RUN pecl install -o -f redis
+RUN rm -rf /tmp/pear
+RUN docker-php-ext-enable redis
 # general extensions
 RUN docker-php-ext-install pdo pdo_mysql mysqli zip gettext
 # imagick

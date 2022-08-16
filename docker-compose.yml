@@ -10,7 +10,7 @@ volumes:
   # ********** mysql
   salamquran_mysql_lib:
   # ********** redis
-  # salamquran_redis_data:
+  salamquran_redis_data:
   # ********** postgresql
   # postgresql_data:
 # list of networks
@@ -57,6 +57,9 @@ services:
       # - .docker/php/conf/local.ini:/usr/local/etc/php/conf.d/local.ini
     environment:
       TZ: ${TIMEZONE}
+      SESSION_HANDLER: redis
+      SESSION_PATH: tcp://salamquran_redis:${REDIS_PORT}?auth=${REDIS_PASSWORD}
+      SESSION_MAX_TIME_LIFE: 86400
     networks:
       - salamquran_qanat
 # -------------------------------------------------- mysql - db
@@ -102,5 +105,23 @@ services:
       PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       PMA_ARBITRARY: 1
       UPLOAD_LIMIT: 1000000000
+# -------------------------------------------------- redis
+  redis:
+    container_name: salamquran_redis
+    image: redis:latest
+    restart: always
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT}
+    # command: ["redis-server", "--appendonly", "yes"]
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - salamquran_redis_data:/data
+    environment:
+      #- REDIS_PASSWORD=${REDIS_PASSWORD}
+      # - REDIS_PASSWORD=YOUR_REDIS_PASSWORD
+      TZ: ${TIMEZONE}
+    profiles: ["redis"]
+    networks:
+      - salamquran_qanat
 #
 # eol
