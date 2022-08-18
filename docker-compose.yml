@@ -20,7 +20,7 @@ networks:
 # list of services
 services:
 # -------------------------------------------------- nginx
-  nginx:
+  salamquran_nginx:
     container_name: salamquran_nginx
     build:
       context: .
@@ -43,7 +43,7 @@ services:
     depends_on:
       - salamquran_php
 # -------------------------------------------------- php
-  php:
+  salamquran_php:
     container_name: salamquran_php
     build:
       context: .
@@ -63,7 +63,7 @@ services:
     networks:
       - salamquran_qanat
 # -------------------------------------------------- mysql - db
-  mysql:
+  salamquran_mysql:
     container_name: salamquran_mysql
     image: mysql
     restart: always
@@ -84,7 +84,7 @@ services:
     networks:
       - salamquran_qanat
 # -------------------------------------------------- phpmyadmin
-  phpmyadmin:
+  salamquran_phpmyadmin:
     container_name: salamquran_phpmyadmin
     image: phpmyadmin
     restart: on-failure
@@ -106,7 +106,7 @@ services:
       PMA_ARBITRARY: 1
       UPLOAD_LIMIT: 1000000000
 # -------------------------------------------------- redis
-  redis:
+  salamquran_redis:
     container_name: salamquran_redis
     image: redis:latest
     restart: always
