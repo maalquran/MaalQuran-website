@@ -74,7 +74,6 @@ services:
       # MYSQL_USER: ${MYSQL_USER}
       # MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       TZ: ${TIMEZONE}
-      SERVICE_NAME: mysql
     # env_file: mysql.env
     ports:
       - 3316:3316
