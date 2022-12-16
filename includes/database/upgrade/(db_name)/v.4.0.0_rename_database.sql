@@ -1,4 +1,4 @@
-RENAME TABLE `maalquran`.`sure` TO `maalquran_data`.`1_sura`;
+RENAME TABLE `maalquran`.`sure` TO `maalquran_data`.`sura`;
 
 DROP TABLE `maalquran`.`quran_word`;
 DROP TABLE `maalquran`.`quran_text`;

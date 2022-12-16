@@ -11,7 +11,6 @@ class aya
 			return \lib\app\quran\page::load(...func_get_args());
 		}
 
-		return [];
 
 		$id_raw = $_id;
 		// load sure

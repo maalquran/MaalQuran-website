@@ -12,5 +12,5 @@ ALTER TABLE `maalquran_data`.`quran_word` ADD INDEX `word_juz_index` (`juz`);
 ALTER TABLE `maalquran_data`.`quran_word` ADD INDEX `word_hizb_index` (`hizb`);
 ALTER TABLE `maalquran_data`.`quran_word` ADD INDEX `word_rub_index` (`rub`);
 
-ALTER TABLE `maalquran_data`.`1_sura` ADD INDEX `sura_index_index` (`index`);
+ALTER TABLE `maalquran_data`.`sura` ADD INDEX `sura_index_index` (`index`);
 

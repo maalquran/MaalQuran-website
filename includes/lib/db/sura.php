@@ -7,14 +7,14 @@ class sura
 	public static function get($_where, $_option = [])
 	{
 		$_option['db_name'] = \lib\db\db_data_name::get();
-		return \dash\db\config::public_get('1_sura', $_where, $_option);
+		return \dash\db\config::public_get('sura', $_where, $_option);
 	}
 
 
 	public static function search($_string, $_option = [])
 	{
 		$_option['db_name'] = \lib\db\db_data_name::get();
-		return \dash\db\config::public_search('1_sura', $_string, $_option);
+		return \dash\db\config::public_search('sura', $_string, $_option);
 	}
 
 
