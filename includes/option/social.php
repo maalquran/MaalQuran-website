@@ -5,9 +5,9 @@
 */
 self::$social['status']                       = true;
 
-self::$social['list']['telegram']             = 'maalquran00';
-self::$social['list']['facebook']             = 'maalquran00';
-self::$social['list']['twitter']              = 'maalquran00';
+self::$social['list']['telegram']             = 'maalquran_com';
+self::$social['list']['facebook']             = 'maalquran_com';
+self::$social['list']['twitter']              = 'maalquran_com';
 self::$social['list']['github']               = 'maalquran';
 // self::$social['list']['linkedin']             = null;
 // self::$social['list']['aparat']               = 'maalquran-init';
