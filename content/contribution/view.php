@@ -7,7 +7,7 @@ class view extends \content_support\ticket\contact_ticket\view
 	{
 
 		\dash\data::page_title(T_('Contribution'));
-		\dash\data::page_desc(T_("Help us improve SalamQuran project"));
+		\dash\data::page_desc(T_("Help us improve MaalQuran project"));
 
 		self::codeurl();
 	}

@@ -5,7 +5,7 @@ require_once('sms.php');
 
 if(!defined('db_data_name'))
 {
-	define('db_data_name', 'salamquran_data');
+	define('db_data_name', 'maalquran_data');
 }
 
 
@@ -17,7 +17,7 @@ self::$language =
 /**
  * system default lanuage
  */
-self::$config['site']['title']         = "SalamQuran";
+self::$config['site']['title']         = "MaalQuran";
 self::$config['site']['desc']          = "Say hello to Quran! Quran is calling you. Access to Quran in your language. Free and Easy.";
 self::$config['site']['slogan']        = "Quran Anywhere Anytime";
 

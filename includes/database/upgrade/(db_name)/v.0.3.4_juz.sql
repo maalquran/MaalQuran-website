@@ -1,4 +1,4 @@
-CREATE TABLE `salamquran_data`.`1_detail` (
+CREATE TABLE `maalquran_data`.`1_detail` (
 `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 
 `type` enum('juz', 'hizb', 'rub', 'nim', 'page', 'surah') NULL,
@@ -41,11 +41,11 @@ PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
-ALTER TABLE `salamquran_data`.`1_detail` ADD INDEX `index_search_type` (`type`);
+ALTER TABLE `maalquran_data`.`1_detail` ADD INDEX `index_search_type` (`type`);
 
 
 
-INSERT INTO salamquran_data.1_detail
+INSERT INTO maalquran_data.1_detail
 (`type`,`index`,`startjuz`,`endjuz`,`juzcount`,`startpage`,`endpage`,`pagecount`,`startaya`,`endaya`,`ayacount`,`startsura`,`endsura`,`suracount`,`starthizb`,`endhizb`,`hizbcount`,`startnim`,`endnim`,`nimcount`,`startrub`,`endrub`,`rubcount`,`words`)
 VALUES
 ('juz', 1, 1, 1, 1, 1, 21, 21, 1, 148, 148, 1, 2, 2, 1, 2, 2, 1, 4, 4, 1, 8, 8, 2522),
@@ -81,7 +81,7 @@ VALUES
 
 
 
-INSERT INTO salamquran_data.1_detail
+INSERT INTO maalquran_data.1_detail
 (`type`,`index`,`startjuz`,`endjuz`,`juzcount`,`startpage`,`endpage`,`pagecount`,`startaya`,`endaya`,`ayacount`,`startsura`,`endsura`,`suracount`,`starthizb`,`endhizb`,`hizbcount`,`startnim`,`endnim`,`nimcount`,`startrub`,`endrub`,`rubcount`,`words`)
 VALUES
 ('hizb', 1, 1, 1, 1, 1, 11, 11, 1, 81, 81, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 4, 4, 1196),
@@ -147,7 +147,7 @@ VALUES
 
 
 
-INSERT INTO salamquran_data.1_detail
+INSERT INTO maalquran_data.1_detail
 (`type`,`index`,`startjuz`,`endjuz`,`juzcount`,`startpage`,`endpage`,`pagecount`,`startaya`,`endaya`,`ayacount`,`startsura`,`endsura`,`suracount`,`starthizb`,`endhizb`,`hizbcount`,`startnim`,`endnim`,`nimcount`,`startrub`,`endrub`,`rubcount`,`words`)
 VALUES
 ( 'nim', 1, 1, 1, 1, 1, 7, 7, 1, 50, 50, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 662),
@@ -273,7 +273,7 @@ VALUES
 
 
 
-INSERT INTO salamquran_data.1_detail
+INSERT INTO maalquran_data.1_detail
 (`type`,`index`,`startjuz`,`endjuz`,`juzcount`,`startpage`,`endpage`,`pagecount`,`startaya`,`endaya`,`ayacount`,`startsura`,`endsura`,`suracount`,`starthizb`,`endhizb`,`hizbcount`,`startnim`,`endnim`,`nimcount`,`startrub`,`endrub`,`rubcount`,`words`)
 VALUES
 ( 'rub', 1, 1, 1, 1, 1, 5, 5, 1, 32, 32, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 360),
@@ -517,7 +517,7 @@ VALUES
 ( 'rub', 239, 30, 30, 1, 596, 599, 4, 6091, 6154, 64, 94, 100, 7, 60, 60, 1, 120, 120, 1, 239, 239, 1, 317),
 ( 'rub', 240, 30, 30, 1, 599, 604, 6, 6155, 6236, 82, 100, 114, 15, 60, 60, 1, 120, 120, 1, 240, 240, 1, 328);
 
-INSERT INTO salamquran_data.1_detail
+INSERT INTO maalquran_data.1_detail
 (`type`,`index`,`startjuz`,`endjuz`,`juzcount`,`startpage`,`endpage`,`pagecount`,`startaya`,`endaya`,`ayacount`,`startsura`,`endsura`,`suracount`,`starthizb`,`endhizb`,`hizbcount`,`startnim`,`endnim`,`nimcount`,`startrub`,`endrub`,`rubcount`)
 VALUES
 ( 'page', 1, 1, 1, 1, 1, 1, 1, 1, 7, 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),

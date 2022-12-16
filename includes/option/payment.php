@@ -3,7 +3,7 @@
 self::$config['default_payment'] = "zarinpal";
 self::$config['zarinpal']['status']               = true;
 self::$config['zarinpal']['MerchantID']           = 'd44c329c-7eba-11e9-ad9f-000c29344814';
-self::$config['zarinpal']['Description']          = "SalamQuran";
+self::$config['zarinpal']['Description']          = "MaalQuran";
 self::$config['zarinpal']['CallbackURL']          = null;
 self::$config['zarinpal']['exchange']             = null;
 

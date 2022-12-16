@@ -498,7 +498,7 @@ class view
 		}
 
 		$imgSrc = str_pad($_page, 3, '0', STR_PAD_LEFT);
-		$imgSrc = 'https://dl.salamquran.com/images/v1/page'. $imgSrc. '.png';
+		$imgSrc = 'https://dl.maalquran.com/images/v1/page'. $imgSrc. '.png';
 
 		\dash\data::dl_pageNum($_page);
 		\dash\data::dl_pageLink(\dash\url::kingdom().'/p'.$_page);

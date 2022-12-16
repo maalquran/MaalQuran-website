@@ -25,20 +25,20 @@ curl -X GET {{apiURL}}qari
       "index": 1090,
       "lang": "fa",
       "type": "ترتیل",
-      "addr": "https://dl.salamquran.com/ayat/parhizgar-murattal-48/",
+      "addr": "https://dl.maalquran.com/ayat/parhizgar-murattal-48/",
       "slug": "parhizgar",
       "name": "شهریار پرهیزگار",
-      "image": "https://salamquran.local/static/images/qariyan/parhizgar.png",
+      "image": "https://maalquran.local/static/images/qariyan/parhizgar.png",
       "short_name": "پرهیزگار"
     },
     {
       "index": 1091,
       "lang": "fa",
       "type": "ترتیل",
-      "addr": "https://dl.salamquran.com/ayat/mansouri-murattal-40/",
+      "addr": "https://dl.maalquran.com/ayat/mansouri-murattal-40/",
       "slug": "mansouri",
       "name": "کریم منصوری",
-      "image": "https://salamquran.local/static/images/qariyan/mansouri.png",
+      "image": "https://maalquran.local/static/images/qariyan/mansouri.png",
       "short_name": "منصوری"
     }
   ]

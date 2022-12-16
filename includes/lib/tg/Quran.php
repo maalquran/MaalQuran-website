@@ -19,7 +19,7 @@ class Quran
 		// show message to go to website
 		$msg = '';
 		// $msg .= T_('You have no survey yet!') ."\n\n";
-		$msg .= "<b>". T_('SalamQuran'). "</b>\n\n";
+		$msg .= "<b>". T_('MaalQuran'). "</b>\n\n";
 		$msg .= T_('Please choose from below keyboard or type your request.');
 		$msg .= "\n\n";
 
@@ -155,7 +155,7 @@ class Quran
 			$randomVal = mt_rand(1, 604);
 			// we dont have number show help of page
 			$msg = '';
-			$msg .= "<b>". T_('SalamQuran'). "</b>". "\n";
+			$msg .= "<b>". T_('MaalQuran'). "</b>". "\n";
 			$msg .= T_('For access to specefic page of Quran please use and type one of below syntax')."\n";
 			$msg .= "<code>ص". $randomVal. "</code>"."\n";
 			$msg .= "<code>p". $randomVal. "</code>"."\n";
@@ -186,13 +186,13 @@ class Quran
 		$website = bot::website(). '/p'. $current;
 
 		$currentPageNum = str_pad($current, 3, "0", STR_PAD_LEFT);
-		$dlLink = 'https://dl.salamquran.com/images/v1/page'. $currentPageNum. '.png';
+		$dlLink = 'https://dl.maalquran.com/images/v1/page'. $currentPageNum. '.png';
 
 
 		// show message to go to website
 		$msg = '';
 		// $msg .= T_('You have no survey yet!') ."\n\n";
-		$msg .= "<b>". T_('SalamQuran'). "</b> | ";
+		$msg .= "<b>". T_('MaalQuran'). "</b> | ";
 		$msg .= T_('Page'). ' '. $current;
 		// show msg for random messages
 		if($_random)
@@ -271,7 +271,7 @@ class Quran
 
 			// we dont have number show help of juz
 			$msg = '';
-			$msg .= "<b>". T_('SalamQuran'). "</b>". "\n";
+			$msg .= "<b>". T_('MaalQuran'). "</b>". "\n";
 			$msg .= T_('For access to specefic juz of Quran please use and type one of below syntax')."\n";
 			$msg .= "<code>ج". $randomVal. "</code>"."\n";
 			$msg .= "<code>j". $randomVal. "</code>"."\n";
@@ -357,7 +357,7 @@ class Quran
 
 			// we dont have number show help of juz
 			$msg = '';
-			$msg .= "<b>". T_('SalamQuran'). "</b>". "\n";
+			$msg .= "<b>". T_('MaalQuran'). "</b>". "\n";
 			$msg .= T_('For access to specefic surah of Quran please use and type one of below syntax')."\n";
 			$msg .= "<code>س". $randomVal. "</code>"."\n";
 			$msg .= "<code>s". $randomVal. "</code>"."\n";
@@ -544,7 +544,7 @@ class Quran
 
 			// we dont have number show help of juz
 			$msg = '';
-			$msg .= "<b>". T_('SalamQuran'). "</b>". "\n";
+			$msg .= "<b>". T_('MaalQuran'). "</b>". "\n";
 			$msg .= T_('For access to specefic aya of Quran please use and type one of below syntax')."\n";
 			$msg .= "<code>آ". $randomVal. "</code>"."\n";
 			$msg .= "<code>a". $randomVal. "</code>"."\n";
@@ -582,7 +582,7 @@ class Quran
 			}
 
 			$msg .= "\n\n";
-			$msg .= "<b>". T_('SalamQuran'). "</b>". "\n";
+			$msg .= "<b>". T_('MaalQuran'). "</b>". "\n";
 			$msg .= bot::website();
 			if(isset($myAye['result']['index']))
 			{
@@ -600,7 +600,7 @@ class Quran
 	{
 		bot::ok();
 		$msg    = T_("Full text of Quran");
-		$dlLink = 'https://dl.salamquran.com/images/pdf/v1/SalamQuran.pdf';
+		$dlLink = 'https://dl.maalquran.com/images/pdf/v1/MaalQuran.pdf';
 
 		// if start with callback answer callback
 		if(bot::isCallback())

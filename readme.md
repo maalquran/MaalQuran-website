@@ -1,6 +1,6 @@
-<img src="src/public_html/static/images/logo.png" alt="SalamQuran logo" align="right" width="200px"/>
+<img src="src/public_html/static/images/logo.png" alt="MaalQuran logo" align="right" width="200px"/>
 
-# SalamQuran
+# MaalQuran
 
 > Quran Anywhere Anytime
 
@@ -12,7 +12,7 @@ Access to Quran in your language. Free and Easy.
 You need to setup project? Follow the steps below
 
 1. First, you need to clone this repository, also you can download and place it somewhere.
-2. Second, you need to clone/download the Dash framework and put it inside of/next to the SalamQuran folder.
+2. Second, you need to clone/download the Dash framework and put it inside of/next to the MaalQuran folder.
 3. Third, you must point the custom URL to the 'public_html' folder. If you want to run on your local system, for example with Xampp, you must set a virtual host and point one url to the 'public_html' folder. for example `myquran.local`.
 4. Fourth, go inside the `dash` folder, copy and rename the `config-sample.php` file to `config.php` then open it in editor and set your databe name, user and password.
 5. Finally, you must visit the installation URL, for example  `http://myquran.local/su/install?time=first_time`. you must change `http://myquran.local/` with your custom URL. In this page you must enter your mobile number as system supervisor and installation processs is going to starting and after a while all databases is installed automatically.
@@ -30,7 +30,7 @@ You need to setup project? Follow the steps below
 
 ## Contributing
 
-1. Fork it (<https://github.com/salamquran/SalamQuran-website/fork>)
+1. Fork it (<https://github.com/maalquran/MaalQuran-website/fork>)
 2. Commit your changes (`git commit -am 'Add some changes'`)
 3. Push to the branch (`git push origin master`)
 4. Create a new Pull Request

@@ -6,7 +6,7 @@ class view
 
 	public static function config()
 	{
-		\dash\data::dlLink('https://dl.salamquran.com');
+		\dash\data::dlLink('https://dl.maalquran.com');
 
 		\lib\badge::set('OpenAudioBank');
 

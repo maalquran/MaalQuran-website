@@ -273,7 +273,7 @@ class mag
 				}
 
 				$word = intval($word);
-				// 88246 number of word in quran database `salamquran_data.1_quran_word.id`
+				// 88246 number of word in quran database `maalquran_data.1_quran_word.id`
 				if($word < 0 || $word > 88246)
 				{
 					\dash\notif::error(T_("Invalid word id"));

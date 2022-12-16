@@ -89,7 +89,7 @@ class qari
 
 	private static function master_path()
 	{
-		return 'https://dl.salamquran.com/ayat/';
+		return 'https://dl.maalquran.com/ayat/';
 	}
 
 	public static function list()

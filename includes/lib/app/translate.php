@@ -240,7 +240,7 @@ class translate
 
 	// get all url of language
 	// for example: fa1, ar2, en8, ...
-	// use in url https://salamquran.com/s1?t=fa1
+	// use in url https://maalquran.com/s1?t=fa1
 	public static function all_translate_url()
 	{
 		$list = self::translate_list();

@@ -214,7 +214,7 @@ function handlePlayWbw()
       if(soreID)
       {
         playerTogglePlay('pause', true);
-        var fullWUrl = "https://dl.salamquran.com/wbw/" + soreID + '/' + wbwAddr + '.mp3'
+        var fullWUrl = "https://dl.maalquran.com/wbw/" + soreID + '/' + wbwAddr + '.mp3'
         wbwAudio.src = fullWUrl;
         wbwAudio.play().catch(function()
         {

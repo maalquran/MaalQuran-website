@@ -158,7 +158,7 @@ function createDownloadLink(blob,encoding) {
 
 	// //link the a element to the blob
 	// link.href = url;
-	// link.download = 'SalamQuran-lms-'+  new Date().toISOString() + '.'+encoding;
+	// link.download = 'MaalQuran-lms-'+  new Date().toISOString() + '.'+encoding;
 	// link.innerHTML = link.download;
 
 	//add the new audio and a elements to the div element

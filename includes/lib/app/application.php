@@ -96,7 +96,7 @@ class application
 		$intro[] =
 		[
 			'title'       => T_('Completely Free'),
-			'desc'        => T_('Take advantage of all the possibilities of Salam Quran for free!'),
+			'desc'        => T_('Take advantage of all the possibilities of MaalQuran for free!'),
 			'bg_from'     => '#ffffff',
 			'bg_to'       => '#ffffff',
 			'title_color' => '#000000',

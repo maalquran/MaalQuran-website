@@ -7,7 +7,7 @@ class controller
 	{
 		if(!\dash\url::child())
 		{
-			\dash\redirect::to(\dash\url::static(). '/app/SalamQuran-v10.apk');
+			\dash\redirect::to(\dash\url::static(). '/app/MaalQuran-v10.apk');
 		}
 	}
 }

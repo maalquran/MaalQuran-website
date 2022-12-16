@@ -1,16 +1,16 @@
 {
-  "name": "SalamQuran",
+  "name": "MaalQuran",
   "version": "1.0.0",
-  "description": "SalamQuran",
+  "description": "MaalQuran",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SalamQuran/SalamQuran-website.git"
+    "url": "git+https://github.com/MaalQuran/MaalQuran-website.git"
   },
   "bugs": {
-    "url": "https://github.com/SalamQuran/SalamQuran-website/issues"
+    "url": "https://github.com/MaalQuran/MaalQuran-website/issues"
   },
-  "homepage": "https://SalamQuran.com",
+  "homepage": "https://MaalQuran.com",
   "dependencies": {
     "siftal": "^6.9.0",
     "@ermile/dash": "^20.0.0"
