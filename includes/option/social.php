@@ -12,6 +12,7 @@ self::$social['list']['github']               = 'maalquran';
 // self::$social['list']['linkedin']             = null;
 // self::$social['list']['aparat']               = 'maalquran-init';
 
+
 /**
 * TELEGRAM
 * t.me
